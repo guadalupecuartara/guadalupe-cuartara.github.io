@@ -1,3 +1,4 @@
+
 *{
     font-family: Georgia, sans-serif
 }
@@ -70,7 +71,7 @@ body>header div.menu nav.social a:hover {
     text-shadow: rgba(253, 0, 97, 0.5) 0 3px 8px;
 }
 
-/** MAIN **/
+/** MAIN **/ 
 
 body>main {
     padding-top: 60px;
@@ -78,12 +79,16 @@ body>main {
 
 body>main div.frase {
     height: calc(100vh - 100px);
+    background: rgb(255, 255, 255) url(img/alfileres.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
 }
 
 body>main div.frase p {
     font-family: 'Georgia', serif;
     font-size: 2rem;
-    text-shadow: 1px 1px 2px black, 0 0 1em #20100A, 0 0 0.2em #20100A;
+    text-shadow: 1px 1px 2px black, 0 0 1em #200a15, 0 0 0.2em #200a11;
     width: 100%;
     color: #fff;
     font-weight: 300;
@@ -100,9 +105,10 @@ body>main div.frase {
 body>main section.contact-form {
     margin: 1rem;
     padding: 1rem;
-    background-color: rgba(43, 11, 23, 0.938);
+    background-color: rgba(252, 220, 231, 0.938);
     color: rgb(255, 0, 85);
     max-width: 45%;
+    font-weight:bold
 }
 
 body>main section.contact-form label {
@@ -110,9 +116,76 @@ body>main section.contact-form label {
     text-transform: uppercase;
     padding: 0 10px;
     letter-spacing: 2px;
-    background-color: rgba(43, 11, 23, 0.938);
 }
 
 body>main section.contact-form div.form-group {
     margin-top: 1.5rem;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+}
+
+body>header {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+body>header div.menu {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+body>header div.menu div.logo {
+    flex: 1 1 auto;
+}
+
+body>header div.menu nav.navigation {
+    flex: 5 1 auto;
+}
+
+body>header div.menu nav.social {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+/** FOOTER **/
+
+body>footer {
+    background: #c20051;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+body>footer nav.pie {
+    font-size: 0.7rem;
+}
+body>footer nav.pie a {
+    color: #e68fb8;
+}
+
+body>footer nav.social a {
+    font-size: 18px;
+    padding: 0 5px;
+    color: #e68fb8;
+}
+
+body>footer nav.social a:hover {
+    text-shadow: rgba(253, 0, 105, 0.836) 0 3px 8px;
+}
+
+body>footer nav.social {
+    display: none;
 }
